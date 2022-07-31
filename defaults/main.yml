@@ -1,7 +1,6 @@
 vars:
   my_root_path: "/home"
-  my_compose_path: "{{ my_root_path }}/docker-compose.yml"
-  my_data_path: "{{ my_root_path }}/data"  
+  my_compose_path: "{{ vars.my_root_path }}/docker-compose.yml"
   image_nginx: nginx
   ports_nginx: [80:80]
   image_redis: redis
