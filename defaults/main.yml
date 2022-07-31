@@ -7,4 +7,4 @@ containers:
     image: "redis"
   - container: "postgres"
     image: "postgres"
-    volumes: [/tmp/pgdata:/var/lib/postgresql]
+    volumes: "/tmp/pgdata:/var/lib/postgresql"
