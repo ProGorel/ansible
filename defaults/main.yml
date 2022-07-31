@@ -1,5 +1,5 @@
 containers:
- - image: nginx
+  image: nginx
  - { ports: [80:80] }
  - { image: redis }
  - { image: potgres }
