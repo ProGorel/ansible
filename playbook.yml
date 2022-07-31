@@ -1,7 +1,8 @@
 ---
 
-- name: set docker-compose
+- name: docker-compose
   template:
     src: docker-compose.yml.j2
     dest: "{{ my_compose_path }}"
     mode: 0700
+    
