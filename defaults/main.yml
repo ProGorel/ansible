@@ -1,6 +1,6 @@
 containers:
   - container: "nginx"
-    image: "nginx"
+      image: "nginx"
     ports: 
     - "80:80"
   - container: "redis"
