@@ -1,6 +1,6 @@
 containers:
   image: nginx
   ports: [80:80]
- - { image: redis }
- - { image: potgres }
- - { volumes: [/tmp/pgdata:/var/lib/postgresql] }
+  image: redis
+  image: potgres
+  volumes: [/tmp/pgdata:/var/lib/postgresql]
