@@ -9,4 +9,4 @@
   - name: docker-compose template
     template:
       src: docker-compose.yml.j2
-      dest: /home/gorel/docker-compose.yml
+      dest: /home/docker-compose.yml
