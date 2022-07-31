@@ -1,7 +1,7 @@
 ---
 version: "3.0"
 services:
-  {% for item in some_list %}
+  {% for item in some_list[n] %}
   {{ item.name }}:
     image: {{ item.image }}
     ports: {{ item.ports }}
