@@ -4,10 +4,6 @@ services:
   {% for item in containers %}
   {{ item.container }}:
     image: {{ item.image }}
-  {% if item.ports is defined %}
     ports: {{ item.ports }}
-  {%- endif %}
-  {% if item.volumes is defined %}
     volumes: {{ item.volumes }}
-  {%- endif %}
   {% endfor %}
