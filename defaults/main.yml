@@ -1,8 +1,6 @@
-vars:
-  my_root_path: "/home"
-  my_compose_path: "{{ vars.my_root_path }}/docker-compose.yml"
-  image_nginx: nginx
-  ports_nginx: [80:80]
-  image_redis: redis
-  image_postgres: potgres
-  volumes_postgres: [/tmp/pgdata:/var/lib/postgresql]
+containers:
+  image: nginx
+  ports: [80:80]
+  image: redis
+  image: potgres
+  volumes: [/tmp/pgdata:/var/lib/postgresql]
