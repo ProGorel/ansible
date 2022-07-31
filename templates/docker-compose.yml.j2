@@ -8,9 +8,10 @@ services:
 {% endif %}
 {% if item.ports is defined %}
     ports:
-      - "{{ item.ports }}"
+      - {{ item.ports }}
 {% endif %}
 {% if item.volumes is defined %}
-    volumes: {{ item.volumes }}
+    volumes: 
+      - {{ item.volumes }}
 {% endif %}
 {% endfor %}
