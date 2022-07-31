@@ -2,7 +2,7 @@
 version: "3.0"
 services:
   {% for item in containers %}
-  {{ item }}:
+  {{ item.name }}:
     image: {{ item.image }}
     ports: {{ item.ports }}
     volumes: {{ item.volumes }}
