@@ -6,9 +6,13 @@
     - defaults/main.yml
 
   tasks:
-  - name: docker-compose
+  - name: docker-compose template
     template:
       src: docker-compose.yml.j2
       dest: /home/gorel/docker-compose.yml
       mode: 0700
-      
+    vars:
+      some_list:
+      - item1
+      - item2
+      - item3
