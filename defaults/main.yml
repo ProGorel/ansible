@@ -1,7 +1,6 @@
-vars:
-  containers:
-   - image: nginx
-   - { ports: [80:80] }
-   - { image: redis }
-   - { image: potgres }
-   - { volumes: [/tmp/pgdata:/var/lib/postgresql] }
+containers:
+ - image: nginx
+ - { ports: [80:80] }
+ - { image: redis }
+ - { image: potgres }
+ - { volumes: [/tmp/pgdata:/var/lib/postgresql] }
