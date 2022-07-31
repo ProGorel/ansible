@@ -1,6 +1,6 @@
-gogs_root_path: /srv/docker/gogs
-gogs_compose_path: "{{ gogs_root_path }}/docker-compose.yml"
-gogs_data_path: "{{ gogs_root_path }}/data"
+my_root_path: /srv/docker/my
+my_compose_path: "{{ my_root_path }}/docker-compose.yml"
+my_data_path: "{{ my_root_path }}/data"
 image_nginx: nginx
 ports_nginx: [80:80]
 image_redis: redis
