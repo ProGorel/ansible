@@ -1,8 +1,9 @@
 ---
 version: "3.0"
 services:
-  {% for item in item.name %}
+  {% for item in some_list %}
   {{ item.name }}:
     image: {{ item.image }}
     ports: {{ item.ports }}
+    volumes: {{ item.volumes }}
   {% endfor %}
