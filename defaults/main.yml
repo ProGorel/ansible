@@ -1,4 +1,4 @@
-my_root_path: /srv/docker/my
+my_root_path: /home/
 my_compose_path: "{{ my_root_path }}/docker-compose.yml"
 my_data_path: "{{ my_root_path }}/data"  
 image_nginx: nginx
