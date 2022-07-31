@@ -10,9 +10,3 @@
     template:
       src: docker-compose.yml.j2
       dest: /home/gorel/docker-compose.yml
-      mode: 0700
-    vars:
-      some_list:
-      - image
-      - ports
-      - volumes
