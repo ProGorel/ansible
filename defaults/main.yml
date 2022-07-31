@@ -1,9 +1,9 @@
 containers:
   - container: nginx
     image: nginx
-    ports: "80:80"
+    ports: "[80:80]"
   - container: "redis"
     image: "redis"
   - container: "postgres"
     image: "postgres"
-    volumes: "/tmp/pgdata:/var/lib/postgresql"
+    volumes: "[/tmp/pgdata:/var/lib/postgresql]"
