@@ -1,1 +1,8 @@
-
+---
+version: "3.0"
+services:
+  {% for item in defaults %}
+  {{ item.name }}:
+    image: {{ item.image }}
+    ports: {{ item.ports }}
+  {% endfor %}
