@@ -1,13 +1,16 @@
 ---
 version: "3.3"
 services:
-  {% for item in containers %}
+{% for item in containers %}
   {{ item.container }}:
+{% if item.image is defined %}
     image: {{ item.image }}
-  {% if item.ports is defined %}
-    ports: {{ item.ports }}
-  {% endif %}
-  {% if item.volumes is defined %}
+{% endif %}
+{% if item.ports is defined %}
+    ports:
+      - "{{ item.ports }}"
+{% endif %}
+{% if item.volumes is defined %}
     volumes: {{ item.volumes }}
-  {% endif %}
-  {% endfor %}
+{% endif %}
+{% endfor %}
