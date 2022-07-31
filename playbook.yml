@@ -1,6 +1,6 @@
 ---
 
-  - name: set docker-compose
+  - name: set docker_compose
     template:
       src: docker-compose.yml.j2
       dest: "{{ my_compose_path }}"
